@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Login - ShopEase</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Shoptech</title>
   <link rel="stylesheet" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
   <header>
     <div class="container header-flex">
@@ -20,16 +25,23 @@
     </div>
   </header>
 
-  <h1>Login</h1>
-  <form class="login-form">
-    <label>Username:</label><br>
-    <input type="text" placeholder="Your Name"><br><br>
-    <label>Email:</label><br>
-    <input type="email" placeholder="Your@Email"><br><br>
-    <label>Password:</label><br>
-    <input type="password" placeholder="*****" maxlength="6"><br><br>
-    <button class="btn">Login</button>
-  </form>
+  <section class="login-section">
+    <div class="login-box">
+      <h2>Login to Shoptech</h2>
+      <form action="#" method="post" class="login-form">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter password" />
+        </div>
+        <button type="submit" class="btn primary">Login</button>
+        <p class="signup-link">Don't have an account? <a href="#">Register here</a></p>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <div class="footer-container">
@@ -37,4 +49,11 @@
       <ul class="footer-links">
         <li><a href="about.html">About</a></li>
         <li><a href="product.html">Products</a></li>
-        <li><a href="cart.html">Cart</a
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
